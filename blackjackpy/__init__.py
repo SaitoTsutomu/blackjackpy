@@ -16,7 +16,7 @@ class Card:
         return r + s
 
 
-class Owner:
+class Player:
     def __init__(self):
         self.hands = []
 
@@ -34,13 +34,11 @@ class Owner:
                 p += 10
         return p
 
-
-class Player(Owner):
     def ask(self):
         print("Draw? (y/n) ", end="")
         return input()
 
-    def act(self, bj):
+    def act_as_player(self, bj):
         while self.point() <= 20:
             bj.show(True)
             s = ""
@@ -50,9 +48,7 @@ class Player(Owner):
                 break
             self.draw(bj)
 
-
-class Dealer(Owner):
-    def act(self, bj):
+    def act_as_dealer(self, bj):
         while self.point() <= 16:
             self.draw(bj)
 
@@ -64,17 +60,17 @@ class Blackjack:
             random.seed(seed)
         random.shuffle(self.cards)
         self.player = Player()
-        self.dealer = Dealer()
+        self.dealer = Player()
 
     def start_game(self):
         for _ in range(2):
             self.player.draw(self)
             self.dealer.draw(self)
-        self.player.act(self)
+        self.player.act_as_player(self)
         player_point = self.player.point()
         self.message = "You lose."
         if player_point <= 21:
-            self.dealer.act(self)
+            self.dealer.act_as_dealer(self)
             dealer_point = self.dealer.point()
             if player_point == dealer_point:
                 self.message = "Draw."
