@@ -2,31 +2,31 @@
 authors = ["SaitoTsutomu <tsutomu7@hotmail.co.jp>"]
 classifiers = [
   "Development Status :: 1 - Planning",
-  "License :: OSI Approved :: MIT License",
+  "License :: OSI Approved :: Apache Software License",
   "Programming Language :: Python",
   "Topic :: Software Development",
   "Topic :: Scientific/Engineering",
 ]
 description = ""
 homepage = "https://github.com/SaitoTsutomu/blackjackpy"
-license = "MIT"
+license = "Apache-2.0"
 name = "blackjackpy"
 readme = "README.md"
-version = "0.0.2"
+version = "0.1.0"
 
 [tool.poetry.scripts]
 blackjackpy = "blackjackpy:main"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.11"
 
-[tool.poetry.dev-dependencies]
-black = "^19.10b0"
-flake8 = "^3.8.3"
-isort = "^4.3.21"
-mypy = "^0.780"
-pytest = "^5.2"
+[tool.poetry.group.dev.dependencies]
+black = "^23.9"
+flake8 = "^6.1"
+isort = "^5.12"
+mypy = "^1.5"
+pytest = "^7.4"
 
 [build-system]
-build-backend = "poetry.masonry.api"
-requires = ["poetry>=0.12"]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
