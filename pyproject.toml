@@ -1,5 +1,5 @@
-[tool.poetry]
-authors = ["SaitoTsutomu <tsutomu7@hotmail.co.jp>"]
+[project]
+authors = [{name = "Saito Tsutomu", email = "tsutomu7@hotmail.co.jp"}]
 classifiers = [
   "Development Status :: 1 - Planning",
   "License :: OSI Approved :: Apache Software License",
@@ -7,23 +7,32 @@ classifiers = [
   "Topic :: Software Development",
   "Topic :: Scientific/Engineering",
 ]
-description = ""
-homepage = "https://github.com/SaitoTsutomu/blackjackpy"
-license = "Apache-2.0"
+dependencies = []
+description = "Blackjack game"
+license = {text = "Apache-2.0"}
 name = "blackjackpy"
 readme = "README.md"
-version = "0.1.0"
+requires-python = ">=3.12"
+version = "0.2.1"
 
-[tool.poetry.scripts]
+[project.urls]
+homepage = "https://github.com/SaitoTsutomu/blackjackpy"
+
+[project.scripts]
 blackjackpy = "blackjackpy:main"
 
-[tool.poetry.dependencies]
-python = "^3.11"
+[tool.uv]
+dev-dependencies = [
+  "more-itertools>=10.4.0",
+  "pytest>=8.3.2",
+]
 
-[tool.poetry.group.dev.dependencies]
-mypy = "^1.11"
-pytest = "^8.3"
+[tool.mypy]
+ignore_missing_imports = 1
+
+[tool.ruff]
+src = ["src"]
 
 [build-system]
-build-backend = "poetry.core.masonry.api"
-requires = ["poetry-core"]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
