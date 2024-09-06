@@ -24,6 +24,20 @@ expected2 = """\
     Dealer(19):  Q(D) 9(D)
     You win.
 """
+expected3 = """\
+    Player(20):  J(D) K(D)
+    Dealer(--):  Q(D) *(*)
+    Player(20):  J(D) K(D)
+    Dealer(21):  Q(D) 6(D) 5(D)
+    You lose.
+"""
+expected4 = """\
+    Player(20):  J(D) K(D)
+    Dealer(--):  Q(D) *(*)
+    Player(21):  J(D) K(D) A(D)
+    Dealer(21):  Q(D) 6(D) 5(D)
+    Draw.
+"""
 
 
 @pytest.mark.parametrize(
@@ -31,6 +45,8 @@ expected2 = """\
     [
         ([10, 11, 12, 8], "n", dedent(expected1)),
         ([10, 11, 12, 8, 0], "yn", dedent(expected2)),
+        ([10, 11, 12, 5, 4], "n", dedent(expected3)),
+        ([10, 11, 12, 5, 0, 4], "yn", dedent(expected4)),
     ],
 )
 def test_game(capsys, cards, player_answers, expected):
