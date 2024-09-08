@@ -28,7 +28,8 @@ dev-dependencies = [
 ]
 
 [tool.mypy]
-ignore_missing_imports = 1
+files = "src"
+ignore_missing_imports = true
 
 [tool.ruff]
 src = ["src"]
