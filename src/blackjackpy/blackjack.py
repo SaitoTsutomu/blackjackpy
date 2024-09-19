@@ -1,4 +1,7 @@
 import random
+import typing
+
+BLACKJACK: typing.Final[int] = 21
 
 
 class Card:
@@ -28,14 +31,14 @@ class Owner:
     def draw(self, gm: "GameMaster") -> None:
         self.hands.append(gm.pop())
 
-    def sequence(self, hided: bool = False) -> str:
+    def sequence(self, *, hidden: bool = False) -> str:
         s = "".join(str(cd) for cd in self.hands)
-        return (s[:5] + " *(*)" + s[10:]) if hided else s
+        return (s[:5] + " *(*)" + s[10:]) if hidden else s
 
     def point(self) -> int:
         pnt = sum(cd.point() for cd in self.hands)
         for cd in self.hands:
-            if cd.rank == 1 and pnt + 10 <= 21:
+            if cd.rank == 1 and pnt + 10 <= BLACKJACK:
                 pnt += 10
         return pnt
 
@@ -43,13 +46,14 @@ class Owner:
 class Player(Owner):
     """プレイヤー"""
 
-    def ask(self) -> str:
+    @classmethod
+    def ask(cls) -> str:
         print("Hit? (y/n) ", end="")
         return input()
 
     def act(self, gm: "GameMaster") -> None:
-        while self.point() <= 20:
-            gm.show(True)
+        while self.point() < BLACKJACK:
+            gm.show(hidden=True)
             answer = ""
             while answer not in {"y", "n"}:
                 answer = self.ask()
@@ -61,8 +65,10 @@ class Player(Owner):
 class Dealer(Owner):
     """ディーラー"""
 
+    LOWER: typing.Final[int] = 17
+
     def act(self, gm: "GameMaster") -> None:
-        while self.point() <= 16:
+        while self.point() < self.LOWER:
             self.draw(gm)
 
 
@@ -87,22 +93,22 @@ class GameMaster:
         self.player.act(self)
         player_point = self.player.point()
         self.message = "You lose."
-        if player_point <= 21:
+        if player_point <= BLACKJACK:
             self.dealer.act(self)
             dealer_point = self.dealer.point()
             if player_point == dealer_point:
                 self.message = "Draw."
-            elif dealer_point >= 22 or dealer_point < player_point:
+            elif dealer_point > BLACKJACK or dealer_point < player_point:
                 self.message = "You win."
-        self.show(False)
+        self.show(hidden=False)
         print(self.message)
 
-    def show(self, hided: bool) -> None:
+    def show(self, *, hidden: bool) -> None:
         player_point = self.player.point()
         player_sequence = self.player.sequence()
         print(f"Player({player_point:2}): {player_sequence}")
-        dealer_point = "--" if hided else self.dealer.point()
-        dealer_sequence = self.dealer.sequence(hided)
+        dealer_point = "--" if hidden else self.dealer.point()
+        dealer_sequence = self.dealer.sequence(hidden=hidden)
         print(f"Dealer({dealer_point:2}): {dealer_sequence}")
 
     def pop(self) -> Card:

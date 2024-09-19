@@ -41,7 +41,7 @@ expected4 = """\
 
 
 @pytest.mark.parametrize(
-    "cards,player_answers,expected",
+    ("cards", "player_answers", "expected"),
     [
         ([10, 11, 12, 8], "n", dedent(expected1)),
         ([10, 11, 12, 8, 0], "yn", dedent(expected2)),
