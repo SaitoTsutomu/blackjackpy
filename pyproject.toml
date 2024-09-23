@@ -13,7 +13,7 @@ license = {text = "Apache-2.0"}
 name = "blackjackpy"
 readme = "README.md"
 requires-python = ">=3.12"
-version = "0.2.2"
+version = "0.2.3"
 
 [project.urls]
 homepage = "https://github.com/SaitoTsutomu/blackjackpy"

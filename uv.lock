@@ -3,7 +3,7 @@ requires-python = ">=3.12"
 
 [[package]]
 name = "blackjackpy"
-version = "0.2.1"
+version = "0.2.3"
 source = { editable = "." }
 
 [package.dev-dependencies]
