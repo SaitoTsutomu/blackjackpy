@@ -13,7 +13,7 @@ license = {text = "Apache-2.0"}
 name = "blackjackpy"
 readme = "README.md"
 requires-python = ">=3.12"
-version = "0.2.4"
+version = "0.2.5"
 
 [project.urls]
 homepage = "https://github.com/SaitoTsutomu/blackjackpy"
@@ -23,8 +23,8 @@ blackjackpy = "blackjackpy:main"
 
 [tool.uv]
 dev-dependencies = [
-  "more-itertools>=10.4.0",
-  "pytest>=8.3.2",
+  "more-itertools>=10.5.0",
+  "pytest>=8.3.3",
 ]
 
 [tool.mypy]

@@ -1,7 +1,7 @@
 import random
 import typing
 
-BLACKJACK: typing.Final[int] = 21
+POINT21: typing.Final[int] = 21
 
 
 class Card:
@@ -38,7 +38,7 @@ class Owner:
     def point(self) -> int:
         pnt = sum(cd.point() for cd in self.hands)
         for cd in self.hands:
-            if cd.rank == 1 and pnt + 10 <= BLACKJACK:
+            if cd.rank == 1 and pnt + 10 <= POINT21:
                 pnt += 10
         return pnt
 
@@ -52,7 +52,7 @@ class Player(Owner):
         return input()
 
     def act(self, gm: "GameMaster") -> None:
-        while self.point() < BLACKJACK:
+        while self.point() < POINT21:
             gm.show(hidden=True)
             answer = ""
             while answer not in {"y", "n"}:
@@ -93,12 +93,12 @@ class GameMaster:
         self.player.act(self)
         player_point = self.player.point()
         self.message = "You lose."
-        if player_point <= BLACKJACK:
+        if player_point <= POINT21:
             self.dealer.act(self)
             dealer_point = self.dealer.point()
             if player_point == dealer_point:
                 self.message = "Draw."
-            elif dealer_point > BLACKJACK or dealer_point < player_point:
+            elif dealer_point > POINT21 or dealer_point < player_point:
                 self.message = "You win."
         self.show(hidden=False)
         print(self.message)
