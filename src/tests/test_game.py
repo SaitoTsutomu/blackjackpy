@@ -1,3 +1,5 @@
+# flake8: noqa: S101
+from collections.abc import Callable
 from textwrap import dedent
 
 import pytest
@@ -6,7 +8,7 @@ from more_itertools import repeat_last
 from blackjackpy import GameMaster
 
 
-def ask(player_answers: str):
+def ask(player_answers: str) -> Callable[[], str]:
     return lambda: next(repeat_last(player_answers))
 
 
@@ -49,9 +51,9 @@ expected4 = """\
         ([10, 11, 12, 5, 0, 4], "yn", dedent(expected4)),
     ],
 )
-def test_game(capsys, cards, player_answers, expected):
+def test_game(capsys, cards: list[int], player_answers: str, expected: str):
     gm = GameMaster(cards=cards)
-    gm.player.ask = ask(player_answers)
+    gm.player.ask = ask(player_answers)  # type: ignore[method-assign]
     gm.start_game()
     captured = capsys.readouterr()
     assert captured.out == expected
