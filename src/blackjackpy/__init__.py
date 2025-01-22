@@ -1,4 +1,4 @@
-from importlib.metadata import metadata
+from importlib.metadata import metadata  # noqa: D104
 
 from .blackjack import Card, Dealer, GameMaster, Player, main
 

@@ -1,0 +1,2 @@
+# blackjackpy module
+::: src.blackjackpy

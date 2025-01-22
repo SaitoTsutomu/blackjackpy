@@ -13,9 +13,10 @@ license = {text = "Apache-2.0"}
 name = "blackjackpy"
 readme = "README.md"
 requires-python = ">=3.12"
-version = "0.2.5"
+version = "0.2.6"
 
 [project.urls]
+docs = "https://saitotsutomu.github.io/blackjackpy/"
 homepage = "https://github.com/SaitoTsutomu/blackjackpy"
 
 [project.scripts]
@@ -23,7 +24,7 @@ blackjackpy = "blackjackpy:main"
 
 [tool.uv]
 dev-dependencies = [
-  "more-itertools>=10.5.0",
+  "more-itertools>=10.6.0",
   "pytest>=8.3.4",
 ]
 
@@ -35,7 +36,7 @@ ignore_missing_imports = true
 src = ["src"]
 
 [tool.ruff.lint]
-ignore = ["ANN001", "ANN20", "CPY", "D1", "D2", "D4", "E501", "T201"]
+ignore = ["ANN001", "ANN20", "CPY", "DOC201", "D203", "D213", "D400", "D415", "E501", "T201"]
 preview = true
 select = ["ALL"]
 

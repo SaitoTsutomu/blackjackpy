@@ -1,4 +1,4 @@
-# flake8: noqa: S101
+# flake8: noqa: S101 D100
 import unittest.mock
 from collections.abc import Callable
 from textwrap import dedent
@@ -10,6 +10,10 @@ from blackjackpy import GameMaster, Player
 
 
 def ask(player_answers: str) -> Callable[[Player], str]:
+    """Player.askのモック
+
+    player_answersの各文字を順番に返す。最後の文字を繰り返す
+    """
     answers = repeat_last(player_answers)
     return lambda _cls: next(answers)
 
@@ -64,6 +68,13 @@ expected5 = """\
     ],
 )
 def test_game(capsys, cards: list[int], player_answers: str, expected: str):
+    """ゲームのテスト
+
+    :param capsys: 標準入力用フィクスチャ
+    :param cards: 配布されるカードのリスト
+    :param player_answers: プレイヤーの選択
+    :param expected: 期待する標準出力
+    """
     gm = GameMaster(cards=cards)
     with unittest.mock.patch("blackjackpy.Player.ask", new=ask(player_answers)):
         gm.start_game()
