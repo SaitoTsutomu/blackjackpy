@@ -18,7 +18,7 @@
     
     
       
-        <title>blackjackpy module - BlackJack</title>
+        <title>Python - BlackJack</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#blackjackpy-module" class="md-skip">
+        <a href="#python" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              blackjackpy module
+              Python
             
           </span>
         </div>
@@ -224,7 +224,7 @@
           
   
   <span class="md-ellipsis">
-    blackjackpy module
+    Python
   </span>
   
 
@@ -235,7 +235,7 @@
         
   
   <span class="md-ellipsis">
-    blackjackpy module
+    Python
   </span>
   
 
@@ -279,6 +279,15 @@
   <a href="#src.blackjackpy.Card.__init__" class="md-nav__link">
     <span class="md-ellipsis">
       __init__
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#src.blackjackpy.Card.__str__" class="md-nav__link">
+    <span class="md-ellipsis">
+      __str__
     </span>
   </a>
   
@@ -403,6 +412,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#src.blackjackpy.main" class="md-nav__link">
+    <span class="md-ellipsis">
+      main
+    </span>
+  </a>
   
 </li>
       
@@ -469,6 +487,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#src.blackjackpy.Card.__str__" class="md-nav__link">
+    <span class="md-ellipsis">
+      __str__
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#src.blackjackpy.Card.point" class="md-nav__link">
     <span class="md-ellipsis">
       point
@@ -590,6 +617,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#src.blackjackpy.main" class="md-nav__link">
+    <span class="md-ellipsis">
+      main
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -605,7 +641,7 @@
                   
 
 
-<h1 id="blackjackpy-module">blackjackpy module</h1>
+<h1 id="python">Python</h1>
 
 
 <div class="doc doc-object doc-module">
@@ -645,7 +681,7 @@
     <div class="doc doc-contents ">
 
 
-        <p>カード</p>
+        <p><strong>クラス</strong> | カード</p>
 
 
 
@@ -674,8 +710,9 @@
 <span class="normal">26</span>
 <span class="normal">27</span>
 <span class="normal">28</span>
-<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Card</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;カード&quot;&quot;&quot;</span>
+<span class="normal">29</span>
+<span class="normal">30</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Card</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;**クラス** | カード&quot;&quot;&quot;</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;カードの初期化</span>
@@ -689,7 +726,8 @@
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;カードの得点&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">)</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1"># noqa: D105</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;文字列化&quot;&quot;&quot;</span>
         <span class="n">n</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span> <span class="o">*</span> <span class="mi">2</span>
         <span class="n">m</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">2</span>
         <span class="n">r</span> <span class="o">=</span> <span class="s2">&quot; A 2 3 4 5 6 7 8 910 J Q K&quot;</span><span class="p">[</span><span class="n">m</span><span class="p">:</span><span class="n">n</span><span class="p">]</span>
@@ -778,6 +816,40 @@
 <div class="doc doc-object doc-function">
 
 
+<h3 id="src.blackjackpy.Card.__str__" class="doc doc-heading">
+            <code class="highlight language-python"><span class="fm">__str__</span><span class="p">()</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>文字列化</p>
+
+            <details class="quote">
+              <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;文字列化&quot;&quot;&quot;</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span> <span class="o">*</span> <span class="mi">2</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">2</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="s2">&quot; A 2 3 4 5 6 7 8 910 J Q K&quot;</span><span class="p">[</span><span class="n">m</span><span class="p">:</span><span class="n">n</span><span class="p">]</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="s2">&quot;DHSC&quot;</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">suit</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="k">return</span> <span class="n">r</span> <span class="o">+</span> <span class="n">s</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
 <h3 id="src.blackjackpy.Card.point" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">point</span><span class="p">()</span></code>
 
@@ -825,7 +897,7 @@
               Bases: <code><span title="src.blackjackpy.blackjack.Owner">Owner</span></code></p>
 
 
-        <p>ディーラー</p>
+        <p><strong>クラス</strong> | ディーラー</p>
 
 
 
@@ -834,16 +906,16 @@
 
               <details class="quote">
                 <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">77</span>
-<span class="normal">78</span>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">78</span>
 <span class="normal">79</span>
 <span class="normal">80</span>
 <span class="normal">81</span>
 <span class="normal">82</span>
 <span class="normal">83</span>
 <span class="normal">84</span>
-<span class="normal">85</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Dealer</span><span class="p">(</span><span class="n">Owner</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;ディーラー&quot;&quot;&quot;</span>
+<span class="normal">85</span>
+<span class="normal">86</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Dealer</span><span class="p">(</span><span class="n">Owner</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;**クラス** | ディーラー&quot;&quot;&quot;</span>
 
     <span class="n">LOWER</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Final</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="mi">17</span>
 
@@ -881,10 +953,10 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">82</span>
-<span class="normal">83</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">83</span>
 <span class="normal">84</span>
-<span class="normal">85</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">act</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gm</span><span class="p">:</span> <span class="s2">&quot;GameMaster&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">85</span>
+<span class="normal">86</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">act</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gm</span><span class="p">:</span> <span class="s2">&quot;GameMaster&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;ディーラーの手番の処理&quot;&quot;&quot;</span>
     <span class="k">while</span> <span class="bp">self</span><span class="o">.</span><span class="n">point</span><span class="p">()</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">LOWER</span><span class="p">:</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">gm</span><span class="p">)</span>
@@ -916,7 +988,7 @@
     <div class="doc doc-contents ">
 
 
-        <p>ゲームマスター</p>
+        <p><strong>クラス</strong> | ゲームマスター</p>
 
 
 
@@ -925,8 +997,7 @@
 
               <details class="quote">
                 <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 88</span>
-<span class="normal"> 89</span>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 89</span>
 <span class="normal"> 90</span>
 <span class="normal"> 91</span>
 <span class="normal"> 92</span>
@@ -976,8 +1047,9 @@
 <span class="normal">136</span>
 <span class="normal">137</span>
 <span class="normal">138</span>
-<span class="normal">139</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">GameMaster</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;ゲームマスター&quot;&quot;&quot;</span>
+<span class="normal">139</span>
+<span class="normal">140</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">GameMaster</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;**クラス** | ゲームマスター&quot;&quot;&quot;</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seed</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">cards</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;ゲームマスターの初期化</span>
@@ -1105,8 +1177,7 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 91</span>
-<span class="normal"> 92</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 92</span>
 <span class="normal"> 93</span>
 <span class="normal"> 94</span>
 <span class="normal"> 95</span>
@@ -1119,7 +1190,8 @@
 <span class="normal">102</span>
 <span class="normal">103</span>
 <span class="normal">104</span>
-<span class="normal">105</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seed</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">cards</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="normal">105</span>
+<span class="normal">106</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seed</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">cards</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;ゲームマスターの初期化</span>
 
 <span class="sd">    :param seed: 乱数シード, defaults to None</span>
@@ -1155,9 +1227,9 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">137</span>
-<span class="normal">138</span>
-<span class="normal">139</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Card</span><span class="p">:</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Card</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;カードを配る&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">cards</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
@@ -1212,8 +1284,7 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">125</span>
-<span class="normal">126</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">126</span>
 <span class="normal">127</span>
 <span class="normal">128</span>
 <span class="normal">129</span>
@@ -1222,7 +1293,8 @@
 <span class="normal">132</span>
 <span class="normal">133</span>
 <span class="normal">134</span>
-<span class="normal">135</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">show</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">hidden</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">135</span>
+<span class="normal">136</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">show</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">hidden</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;プレイヤーとディーラーのカード表示</span>
 
 <span class="sd">    :param hidden: ディーラーの2枚目を隠すかどうか</span>
@@ -1254,8 +1326,7 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">107</span>
-<span class="normal">108</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">108</span>
 <span class="normal">109</span>
 <span class="normal">110</span>
 <span class="normal">111</span>
@@ -1270,7 +1341,8 @@
 <span class="normal">120</span>
 <span class="normal">121</span>
 <span class="normal">122</span>
-<span class="normal">123</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">start_game</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">123</span>
+<span class="normal">124</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">start_game</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;ゲームの開始&quot;&quot;&quot;</span>
     <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
@@ -1317,7 +1389,7 @@
               Bases: <code><span title="src.blackjackpy.blackjack.Owner">Owner</span></code></p>
 
 
-        <p>プレイヤー</p>
+        <p><strong>クラス</strong> | プレイヤー</p>
 
 
 
@@ -1326,8 +1398,7 @@
 
               <details class="quote">
                 <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">56</span>
-<span class="normal">57</span>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">57</span>
 <span class="normal">58</span>
 <span class="normal">59</span>
 <span class="normal">60</span>
@@ -1344,8 +1415,9 @@
 <span class="normal">71</span>
 <span class="normal">72</span>
 <span class="normal">73</span>
-<span class="normal">74</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Player</span><span class="p">(</span><span class="n">Owner</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;プレイヤー&quot;&quot;&quot;</span>
+<span class="normal">74</span>
+<span class="normal">75</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Player</span><span class="p">(</span><span class="n">Owner</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;**クラス** | プレイヤー&quot;&quot;&quot;</span>
 
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">ask</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
@@ -1393,8 +1465,7 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">65</span>
-<span class="normal">66</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">66</span>
 <span class="normal">67</span>
 <span class="normal">68</span>
 <span class="normal">69</span>
@@ -1402,7 +1473,8 @@
 <span class="normal">71</span>
 <span class="normal">72</span>
 <span class="normal">73</span>
-<span class="normal">74</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">act</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gm</span><span class="p">:</span> <span class="s2">&quot;GameMaster&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">74</span>
+<span class="normal">75</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">act</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gm</span><span class="p">:</span> <span class="s2">&quot;GameMaster&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;プレイヤーの手番の処理&quot;&quot;&quot;</span>
     <span class="k">while</span> <span class="bp">self</span><span class="o">.</span><span class="n">point</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">POINT21</span><span class="p">:</span>
         <span class="n">gm</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">hidden</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1437,11 +1509,11 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">59</span>
-<span class="normal">60</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">60</span>
 <span class="normal">61</span>
 <span class="normal">62</span>
-<span class="normal">63</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
+<span class="normal">63</span>
+<span class="normal">64</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">ask</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;標準入力から選択を取得し戻り値とする&quot;&quot;&quot;</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hit? (y/n) &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
@@ -1460,6 +1532,32 @@
 
 </div>
 
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="src.blackjackpy.main" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">main</span><span class="p">()</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>ゲーム実行</p>
+
+            <details class="quote">
+              <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;ゲーム実行&quot;&quot;&quot;</span>
+    <span class="n">GameMaster</span><span class="p">()</span><span class="o">.</span><span class="n">start_game</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
 
 
 
