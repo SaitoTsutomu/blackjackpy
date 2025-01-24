@@ -7,7 +7,7 @@ POINT21: typing.Final[int] = 21
 
 
 class Card:
-    """カード"""
+    """**クラス** | カード"""
 
     def __init__(self, num: int):
         """カードの初期化
@@ -21,7 +21,8 @@ class Card:
         """カードの得点"""
         return min(10, self.rank)
 
-    def __str__(self):  # noqa: D105
+    def __str__(self):
+        """文字列化"""
         n = self.rank * 2
         m = n - 2
         r = " A 2 3 4 5 6 7 8 910 J Q K"[m:n]
@@ -30,7 +31,7 @@ class Card:
 
 
 class Owner:
-    """手札を持ち、カードを引ける人"""
+    """**クラス** | 手札を持ち、カードを引ける人"""
 
     def __init__(self):  # noqa: D107
         self.hands = []
@@ -54,7 +55,7 @@ class Owner:
 
 
 class Player(Owner):
-    """プレイヤー"""
+    """**クラス** | プレイヤー"""
 
     @classmethod
     def ask(cls) -> str:
@@ -75,7 +76,7 @@ class Player(Owner):
 
 
 class Dealer(Owner):
-    """ディーラー"""
+    """**クラス** | ディーラー"""
 
     LOWER: typing.Final[int] = 17
 
@@ -86,7 +87,7 @@ class Dealer(Owner):
 
 
 class GameMaster:
-    """ゲームマスター"""
+    """**クラス** | ゲームマスター"""
 
     def __init__(self, seed: int | None = None, *, cards: list[int] | None = None):
         """ゲームマスターの初期化
@@ -139,5 +140,6 @@ class GameMaster:
         return self.cards.pop(0)
 
 
-def main():  # noqa: D103
+def main():
+    """ゲーム実行"""
     GameMaster().start_game()

@@ -1,2 +1,2 @@
-# blackjackpy module
+# Python
 ::: src.blackjackpy

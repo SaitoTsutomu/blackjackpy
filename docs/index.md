@@ -27,13 +27,13 @@ Having a higher sum than the dealer's hand.
 
 ## Install
 
-```
+```sh
 pip install blackjackpy
 ```
 
 ## How to play
 
-```
+```sh
 $ blackjackpy
 Player( 6):  2(C) 4(S)
 Dealer(--):  5(C) *(*)
@@ -46,7 +46,7 @@ Dealer(17):  5(C) 3(C) 9(S)
 You lose.
 ```
 
-```
+```sh
 $ blackjackpy
 Player(20): 10(S) K(C)
 Dealer(--):  7(C) *(*)
