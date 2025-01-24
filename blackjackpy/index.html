@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="ja" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -63,7 +63,7 @@
       
         
         <a href="#python" class="md-skip">
-          Skip to content
+          コンテンツにスキップ
         </a>
       
     </div>
@@ -77,7 +77,7 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
     <a href=".." title="BlackJack" class="md-header__button md-logo" aria-label="BlackJack" data-md-component="logo">
       
   
@@ -118,16 +118,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="検索">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -138,7 +138,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            検索を初期化
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -171,7 +171,7 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="BlackJack" class="md-nav__button md-logo" aria-label="BlackJack" data-md-component="logo">
       
@@ -243,7 +243,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
   
@@ -252,7 +252,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目次
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -445,7 +445,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
   
@@ -454,7 +454,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目次
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -690,49 +690,49 @@
 
               <details class="quote">
                 <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Card</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;**クラス** | カード&quot;&quot;&quot;</span>
+                <div class="codehilite" style="background: #ffffff"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 9</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">10</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">11</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">12</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">13</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">14</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">15</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">16</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">17</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">18</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">19</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">20</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">21</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">22</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">23</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">24</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">25</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">26</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">27</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">28</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">29</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">30</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #080; font-weight: bold">class</span><span style="color: #BBB"> </span><span style="color: #B06; font-weight: bold">Card</span>:
+<span style="color: #BBB">    </span><span style="color: #D42">&quot;&quot;&quot;**クラス** | カード&quot;&quot;&quot;</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;カードの初期化</span>
+    <span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">__init__</span>(<span style="color: #007020">self</span>, num: <span style="color: #007020">int</span>):
+<span style="color: #BBB">        </span><span style="color: #D42">&quot;&quot;&quot;カードの初期化</span>
 
-<span class="sd">        :param num: 0-52の数字</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">suit</span> <span class="o">=</span> <span class="n">num</span> <span class="o">//</span> <span class="mi">13</span> <span class="o">+</span> <span class="mi">1</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">rank</span> <span class="o">=</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">13</span> <span class="o">+</span> <span class="mi">1</span>
+<span style="color: #D42">        :param num: 0-52の数字</span>
+<span style="color: #D42">        &quot;&quot;&quot;</span>
+        <span style="color: #007020">self</span><span style="color: #333">.</span>suit <span style="color: #333">=</span> num <span style="color: #333">//</span> <span style="color: #00D; font-weight: bold">13</span> <span style="color: #333">+</span> <span style="color: #00D; font-weight: bold">1</span>
+        <span style="color: #007020">self</span><span style="color: #333">.</span>rank <span style="color: #333">=</span> num <span style="color: #333">%</span> <span style="color: #00D; font-weight: bold">13</span> <span style="color: #333">+</span> <span style="color: #00D; font-weight: bold">1</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="nf">point</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;カードの得点&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">)</span>
+    <span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">point</span>(<span style="color: #007020">self</span>) <span style="color: #333">-&gt;</span> <span style="color: #007020">int</span>:
+<span style="color: #BBB">        </span><span style="color: #D42">&quot;&quot;&quot;カードの得点&quot;&quot;&quot;</span>
+        <span style="color: #080; font-weight: bold">return</span> <span style="color: #007020">min</span>(<span style="color: #00D; font-weight: bold">10</span>, <span style="color: #007020">self</span><span style="color: #333">.</span>rank)
 
-    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;文字列化&quot;&quot;&quot;</span>
-        <span class="n">n</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span> <span class="o">*</span> <span class="mi">2</span>
-        <span class="n">m</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">2</span>
-        <span class="n">r</span> <span class="o">=</span> <span class="s2">&quot; A 2 3 4 5 6 7 8 910 J Q K&quot;</span><span class="p">[</span><span class="n">m</span><span class="p">:</span><span class="n">n</span><span class="p">]</span>
-        <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="s2">&quot;DHSC&quot;</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">suit</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
-        <span class="k">return</span> <span class="n">r</span> <span class="o">+</span> <span class="n">s</span>
+    <span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">__str__</span>(<span style="color: #007020">self</span>):
+<span style="color: #BBB">        </span><span style="color: #D42">&quot;&quot;&quot;文字列化&quot;&quot;&quot;</span>
+        n <span style="color: #333">=</span> <span style="color: #007020">self</span><span style="color: #333">.</span>rank <span style="color: #333">*</span> <span style="color: #00D; font-weight: bold">2</span>
+        m <span style="color: #333">=</span> n <span style="color: #333">-</span> <span style="color: #00D; font-weight: bold">2</span>
+        r <span style="color: #333">=</span> <span style="background-color: #FFF0F0">&quot; A 2 3 4 5 6 7 8 910 J Q K&quot;</span>[m:n]
+        s <span style="color: #333">=</span> <span style="background-color: #FFF0F0">&quot;(&quot;</span> <span style="color: #333">+</span> <span style="background-color: #FFF0F0">&quot;DHSC&quot;</span>[<span style="color: #007020">self</span><span style="color: #333">.</span>suit <span style="color: #333">-</span> <span style="color: #00D; font-weight: bold">1</span>] <span style="color: #333">+</span> <span style="background-color: #FFF0F0">&quot;)&quot;</span>
+        <span style="color: #080; font-weight: bold">return</span> r <span style="color: #333">+</span> s
 </code></pre></div></td></tr></table></div>
               </details>
 
@@ -752,7 +752,7 @@
 
 
 <h3 id="src.blackjackpy.Card.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">num</span><span class="p">)</span></code>
+            <code class=" language-python"><span style="color: #06B; font-weight: bold">__init__</span>(num)</code>
 
 </h3>
 
@@ -794,19 +794,19 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;カードの初期化</span>
+              <div class="codehilite" style="background: #ffffff"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">12</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">13</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">14</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">15</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">16</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">17</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">18</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">__init__</span>(<span style="color: #007020">self</span>, num: <span style="color: #007020">int</span>):
+<span style="color: #BBB">    </span><span style="color: #D42">&quot;&quot;&quot;カードの初期化</span>
 
-<span class="sd">    :param num: 0-52の数字</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">suit</span> <span class="o">=</span> <span class="n">num</span> <span class="o">//</span> <span class="mi">13</span> <span class="o">+</span> <span class="mi">1</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">rank</span> <span class="o">=</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">13</span> <span class="o">+</span> <span class="mi">1</span>
+<span style="color: #D42">    :param num: 0-52の数字</span>
+<span style="color: #D42">    &quot;&quot;&quot;</span>
+    <span style="color: #007020">self</span><span style="color: #333">.</span>suit <span style="color: #333">=</span> num <span style="color: #333">//</span> <span style="color: #00D; font-weight: bold">13</span> <span style="color: #333">+</span> <span style="color: #00D; font-weight: bold">1</span>
+    <span style="color: #007020">self</span><span style="color: #333">.</span>rank <span style="color: #333">=</span> num <span style="color: #333">%</span> <span style="color: #00D; font-weight: bold">13</span> <span style="color: #333">+</span> <span style="color: #00D; font-weight: bold">1</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -817,7 +817,7 @@
 
 
 <h3 id="src.blackjackpy.Card.__str__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__str__</span><span class="p">()</span></code>
+            <code class=" language-python"><span style="color: #06B; font-weight: bold">__str__</span>()</code>
 
 </h3>
 
@@ -828,19 +828,19 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;文字列化&quot;&quot;&quot;</span>
-    <span class="n">n</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span> <span class="o">*</span> <span class="mi">2</span>
-    <span class="n">m</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">2</span>
-    <span class="n">r</span> <span class="o">=</span> <span class="s2">&quot; A 2 3 4 5 6 7 8 910 J Q K&quot;</span><span class="p">[</span><span class="n">m</span><span class="p">:</span><span class="n">n</span><span class="p">]</span>
-    <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="s2">&quot;DHSC&quot;</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">suit</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
-    <span class="k">return</span> <span class="n">r</span> <span class="o">+</span> <span class="n">s</span>
+              <div class="codehilite" style="background: #ffffff"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">24</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">25</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">26</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">27</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">28</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">29</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">30</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">__str__</span>(<span style="color: #007020">self</span>):
+<span style="color: #BBB">    </span><span style="color: #D42">&quot;&quot;&quot;文字列化&quot;&quot;&quot;</span>
+    n <span style="color: #333">=</span> <span style="color: #007020">self</span><span style="color: #333">.</span>rank <span style="color: #333">*</span> <span style="color: #00D; font-weight: bold">2</span>
+    m <span style="color: #333">=</span> n <span style="color: #333">-</span> <span style="color: #00D; font-weight: bold">2</span>
+    r <span style="color: #333">=</span> <span style="background-color: #FFF0F0">&quot; A 2 3 4 5 6 7 8 910 J Q K&quot;</span>[m:n]
+    s <span style="color: #333">=</span> <span style="background-color: #FFF0F0">&quot;(&quot;</span> <span style="color: #333">+</span> <span style="background-color: #FFF0F0">&quot;DHSC&quot;</span>[<span style="color: #007020">self</span><span style="color: #333">.</span>suit <span style="color: #333">-</span> <span style="color: #00D; font-weight: bold">1</span>] <span style="color: #333">+</span> <span style="background-color: #FFF0F0">&quot;)&quot;</span>
+    <span style="color: #080; font-weight: bold">return</span> r <span style="color: #333">+</span> s
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -851,7 +851,7 @@
 
 
 <h3 id="src.blackjackpy.Card.point" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">point</span><span class="p">()</span></code>
+            <code class=" language-python">point()</code>
 
 </h3>
 
@@ -862,11 +862,11 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">point</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;カードの得点&quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">rank</span><span class="p">)</span>
+              <div class="codehilite" style="background: #ffffff"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">20</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">21</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">22</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">point</span>(<span style="color: #007020">self</span>) <span style="color: #333">-&gt;</span> <span style="color: #007020">int</span>:
+<span style="color: #BBB">    </span><span style="color: #D42">&quot;&quot;&quot;カードの得点&quot;&quot;&quot;</span>
+    <span style="color: #080; font-weight: bold">return</span> <span style="color: #007020">min</span>(<span style="color: #00D; font-weight: bold">10</span>, <span style="color: #007020">self</span><span style="color: #333">.</span>rank)
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -906,23 +906,23 @@
 
               <details class="quote">
                 <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">78</span>
-<span class="normal">79</span>
-<span class="normal">80</span>
-<span class="normal">81</span>
-<span class="normal">82</span>
-<span class="normal">83</span>
-<span class="normal">84</span>
-<span class="normal">85</span>
-<span class="normal">86</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Dealer</span><span class="p">(</span><span class="n">Owner</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;**クラス** | ディーラー&quot;&quot;&quot;</span>
+                <div class="codehilite" style="background: #ffffff"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">78</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">79</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">80</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">81</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">82</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">83</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">84</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">85</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">86</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #080; font-weight: bold">class</span><span style="color: #BBB"> </span><span style="color: #B06; font-weight: bold">Dealer</span>(Owner):
+<span style="color: #BBB">    </span><span style="color: #D42">&quot;&quot;&quot;**クラス** | ディーラー&quot;&quot;&quot;</span>
 
-    <span class="n">LOWER</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Final</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="mi">17</span>
+    LOWER: typing<span style="color: #333">.</span>Final[<span style="color: #007020">int</span>] <span style="color: #333">=</span> <span style="color: #00D; font-weight: bold">17</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="nf">act</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gm</span><span class="p">:</span> <span class="s2">&quot;GameMaster&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;ディーラーの手番の処理&quot;&quot;&quot;</span>
-        <span class="k">while</span> <span class="bp">self</span><span class="o">.</span><span class="n">point</span><span class="p">()</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">LOWER</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">gm</span><span class="p">)</span>
+    <span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">act</span>(<span style="color: #007020">self</span>, gm: <span style="background-color: #FFF0F0">&quot;GameMaster&quot;</span>) <span style="color: #333">-&gt;</span> <span style="color: #080; font-weight: bold">None</span>:
+<span style="color: #BBB">        </span><span style="color: #D42">&quot;&quot;&quot;ディーラーの手番の処理&quot;&quot;&quot;</span>
+        <span style="color: #080; font-weight: bold">while</span> <span style="color: #007020">self</span><span style="color: #333">.</span>point() <span style="color: #333">&lt;</span> <span style="color: #007020">self</span><span style="color: #333">.</span>LOWER:
+            <span style="color: #007020">self</span><span style="color: #333">.</span>draw(gm)
 </code></pre></div></td></tr></table></div>
               </details>
 
@@ -942,7 +942,7 @@
 
 
 <h3 id="src.blackjackpy.Dealer.act" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">act</span><span class="p">(</span><span class="n">gm</span><span class="p">)</span></code>
+            <code class=" language-python">act(gm)</code>
 
 </h3>
 
@@ -953,13 +953,13 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">83</span>
-<span class="normal">84</span>
-<span class="normal">85</span>
-<span class="normal">86</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">act</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gm</span><span class="p">:</span> <span class="s2">&quot;GameMaster&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;ディーラーの手番の処理&quot;&quot;&quot;</span>
-    <span class="k">while</span> <span class="bp">self</span><span class="o">.</span><span class="n">point</span><span class="p">()</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">LOWER</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">gm</span><span class="p">)</span>
+              <div class="codehilite" style="background: #ffffff"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">83</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">84</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">85</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">86</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">act</span>(<span style="color: #007020">self</span>, gm: <span style="background-color: #FFF0F0">&quot;GameMaster&quot;</span>) <span style="color: #333">-&gt;</span> <span style="color: #080; font-weight: bold">None</span>:
+<span style="color: #BBB">    </span><span style="color: #D42">&quot;&quot;&quot;ディーラーの手番の処理&quot;&quot;&quot;</span>
+    <span style="color: #080; font-weight: bold">while</span> <span style="color: #007020">self</span><span style="color: #333">.</span>point() <span style="color: #333">&lt;</span> <span style="color: #007020">self</span><span style="color: #333">.</span>LOWER:
+        <span style="color: #007020">self</span><span style="color: #333">.</span>draw(gm)
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -997,109 +997,109 @@
 
               <details class="quote">
                 <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 89</span>
-<span class="normal"> 90</span>
-<span class="normal"> 91</span>
-<span class="normal"> 92</span>
-<span class="normal"> 93</span>
-<span class="normal"> 94</span>
-<span class="normal"> 95</span>
-<span class="normal"> 96</span>
-<span class="normal"> 97</span>
-<span class="normal"> 98</span>
-<span class="normal"> 99</span>
-<span class="normal">100</span>
-<span class="normal">101</span>
-<span class="normal">102</span>
-<span class="normal">103</span>
-<span class="normal">104</span>
-<span class="normal">105</span>
-<span class="normal">106</span>
-<span class="normal">107</span>
-<span class="normal">108</span>
-<span class="normal">109</span>
-<span class="normal">110</span>
-<span class="normal">111</span>
-<span class="normal">112</span>
-<span class="normal">113</span>
-<span class="normal">114</span>
-<span class="normal">115</span>
-<span class="normal">116</span>
-<span class="normal">117</span>
-<span class="normal">118</span>
-<span class="normal">119</span>
-<span class="normal">120</span>
-<span class="normal">121</span>
-<span class="normal">122</span>
-<span class="normal">123</span>
-<span class="normal">124</span>
-<span class="normal">125</span>
-<span class="normal">126</span>
-<span class="normal">127</span>
-<span class="normal">128</span>
-<span class="normal">129</span>
-<span class="normal">130</span>
-<span class="normal">131</span>
-<span class="normal">132</span>
-<span class="normal">133</span>
-<span class="normal">134</span>
-<span class="normal">135</span>
-<span class="normal">136</span>
-<span class="normal">137</span>
-<span class="normal">138</span>
-<span class="normal">139</span>
-<span class="normal">140</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">GameMaster</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;**クラス** | ゲームマスター&quot;&quot;&quot;</span>
+                <div class="codehilite" style="background: #ffffff"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 89</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 90</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 91</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 92</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 93</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 94</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 95</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 96</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 97</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 98</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 99</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">100</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">101</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">102</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">103</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">104</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">105</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">106</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">107</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">108</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">109</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">110</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">111</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">112</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">113</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">114</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">115</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">116</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">117</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">118</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">119</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">120</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">121</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">122</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">123</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">124</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">125</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">126</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">127</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">128</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">129</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">130</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">131</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">132</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">133</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">134</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">135</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">136</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">137</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">138</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">139</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">140</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #080; font-weight: bold">class</span><span style="color: #BBB"> </span><span style="color: #B06; font-weight: bold">GameMaster</span>:
+<span style="color: #BBB">    </span><span style="color: #D42">&quot;&quot;&quot;**クラス** | ゲームマスター&quot;&quot;&quot;</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seed</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">cards</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;ゲームマスターの初期化</span>
+    <span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">__init__</span>(<span style="color: #007020">self</span>, seed: <span style="color: #007020">int</span> <span style="color: #333">|</span> <span style="color: #080; font-weight: bold">None</span> <span style="color: #333">=</span> <span style="color: #080; font-weight: bold">None</span>, <span style="color: #333">*</span>, cards: <span style="color: #007020">list</span>[<span style="color: #007020">int</span>] <span style="color: #333">|</span> <span style="color: #080; font-weight: bold">None</span> <span style="color: #333">=</span> <span style="color: #080; font-weight: bold">None</span>):
+<span style="color: #BBB">        </span><span style="color: #D42">&quot;&quot;&quot;ゲームマスターの初期化</span>
 
-<span class="sd">        :param seed: 乱数シード, defaults to None</span>
-<span class="sd">        :param cards: 配布カードのリスト, defaults to None</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">if</span> <span class="n">cards</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">cards</span> <span class="o">=</span> <span class="p">[</span><span class="n">Card</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cards</span><span class="p">]</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">cards</span> <span class="o">=</span> <span class="p">[</span><span class="n">Card</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">52</span><span class="p">)]</span>
-            <span class="k">if</span> <span class="n">seed</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
-            <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cards</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">player</span> <span class="o">=</span> <span class="n">Player</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">dealer</span> <span class="o">=</span> <span class="n">Dealer</span><span class="p">()</span>
+<span style="color: #D42">        :param seed: 乱数シード, defaults to None</span>
+<span style="color: #D42">        :param cards: 配布カードのリスト, defaults to None</span>
+<span style="color: #D42">        &quot;&quot;&quot;</span>
+        <span style="color: #080; font-weight: bold">if</span> cards:
+            <span style="color: #007020">self</span><span style="color: #333">.</span>cards <span style="color: #333">=</span> [Card(i) <span style="color: #080; font-weight: bold">for</span> i <span style="color: #000; font-weight: bold">in</span> cards]
+        <span style="color: #080; font-weight: bold">else</span>:
+            <span style="color: #007020">self</span><span style="color: #333">.</span>cards <span style="color: #333">=</span> [Card(i) <span style="color: #080; font-weight: bold">for</span> i <span style="color: #000; font-weight: bold">in</span> <span style="color: #007020">range</span>(<span style="color: #00D; font-weight: bold">52</span>)]
+            <span style="color: #080; font-weight: bold">if</span> seed <span style="color: #000; font-weight: bold">is</span> <span style="color: #000; font-weight: bold">not</span> <span style="color: #080; font-weight: bold">None</span>:
+                random<span style="color: #333">.</span>seed(seed)
+            random<span style="color: #333">.</span>shuffle(<span style="color: #007020">self</span><span style="color: #333">.</span>cards)
+        <span style="color: #007020">self</span><span style="color: #333">.</span>player <span style="color: #333">=</span> Player()
+        <span style="color: #007020">self</span><span style="color: #333">.</span>dealer <span style="color: #333">=</span> Dealer()
 
-    <span class="k">def</span><span class="w"> </span><span class="nf">start_game</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;ゲームの開始&quot;&quot;&quot;</span>
-        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">dealer</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">act</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-        <span class="n">player_point</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">point</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;You lose.&quot;</span>
-        <span class="k">if</span> <span class="n">player_point</span> <span class="o">&lt;=</span> <span class="n">POINT21</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">dealer</span><span class="o">.</span><span class="n">act</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-            <span class="n">dealer_point</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dealer</span><span class="o">.</span><span class="n">point</span><span class="p">()</span>
-            <span class="k">if</span> <span class="n">player_point</span> <span class="o">==</span> <span class="n">dealer_point</span><span class="p">:</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Draw.&quot;</span>
-            <span class="k">elif</span> <span class="n">dealer_point</span> <span class="o">&gt;</span> <span class="n">POINT21</span> <span class="ow">or</span> <span class="n">dealer_point</span> <span class="o">&lt;</span> <span class="n">player_point</span><span class="p">:</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;You win.&quot;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">hidden</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">message</span><span class="p">)</span>
+    <span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">start_game</span>(<span style="color: #007020">self</span>) <span style="color: #333">-&gt;</span> <span style="color: #080; font-weight: bold">None</span>:
+<span style="color: #BBB">        </span><span style="color: #D42">&quot;&quot;&quot;ゲームの開始&quot;&quot;&quot;</span>
+        <span style="color: #080; font-weight: bold">for</span> _ <span style="color: #000; font-weight: bold">in</span> <span style="color: #007020">range</span>(<span style="color: #00D; font-weight: bold">2</span>):
+            <span style="color: #007020">self</span><span style="color: #333">.</span>player<span style="color: #333">.</span>draw(<span style="color: #007020">self</span>)
+            <span style="color: #007020">self</span><span style="color: #333">.</span>dealer<span style="color: #333">.</span>draw(<span style="color: #007020">self</span>)
+        <span style="color: #007020">self</span><span style="color: #333">.</span>player<span style="color: #333">.</span>act(<span style="color: #007020">self</span>)
+        player_point <span style="color: #333">=</span> <span style="color: #007020">self</span><span style="color: #333">.</span>player<span style="color: #333">.</span>point()
+        <span style="color: #007020">self</span><span style="color: #333">.</span>message <span style="color: #333">=</span> <span style="background-color: #FFF0F0">&quot;You lose.&quot;</span>
+        <span style="color: #080; font-weight: bold">if</span> player_point <span style="color: #333">&lt;=</span> POINT21:
+            <span style="color: #007020">self</span><span style="color: #333">.</span>dealer<span style="color: #333">.</span>act(<span style="color: #007020">self</span>)
+            dealer_point <span style="color: #333">=</span> <span style="color: #007020">self</span><span style="color: #333">.</span>dealer<span style="color: #333">.</span>point()
+            <span style="color: #080; font-weight: bold">if</span> player_point <span style="color: #333">==</span> dealer_point:
+                <span style="color: #007020">self</span><span style="color: #333">.</span>message <span style="color: #333">=</span> <span style="background-color: #FFF0F0">&quot;Draw.&quot;</span>
+            <span style="color: #080; font-weight: bold">elif</span> dealer_point <span style="color: #333">&gt;</span> POINT21 <span style="color: #000; font-weight: bold">or</span> dealer_point <span style="color: #333">&lt;</span> player_point:
+                <span style="color: #007020">self</span><span style="color: #333">.</span>message <span style="color: #333">=</span> <span style="background-color: #FFF0F0">&quot;You win.&quot;</span>
+        <span style="color: #007020">self</span><span style="color: #333">.</span>show(hidden<span style="color: #333">=</span><span style="color: #080; font-weight: bold">False</span>)
+        <span style="color: #007020">print</span>(<span style="color: #007020">self</span><span style="color: #333">.</span>message)
 
-    <span class="k">def</span><span class="w"> </span><span class="nf">show</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">hidden</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;プレイヤーとディーラーのカード表示</span>
+    <span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">show</span>(<span style="color: #007020">self</span>, <span style="color: #333">*</span>, hidden: <span style="color: #007020">bool</span>) <span style="color: #333">-&gt;</span> <span style="color: #080; font-weight: bold">None</span>:
+<span style="color: #BBB">        </span><span style="color: #D42">&quot;&quot;&quot;プレイヤーとディーラーのカード表示</span>
 
-<span class="sd">        :param hidden: ディーラーの2枚目を隠すかどうか</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">player_point</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">point</span><span class="p">()</span>
-        <span class="n">player_sequence</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">sequence</span><span class="p">()</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Player(</span><span class="si">{</span><span class="n">player_point</span><span class="si">:</span><span class="s2">2</span><span class="si">}</span><span class="s2">): </span><span class="si">{</span><span class="n">player_sequence</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="n">dealer_point</span> <span class="o">=</span> <span class="s2">&quot;--&quot;</span> <span class="k">if</span> <span class="n">hidden</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">dealer</span><span class="o">.</span><span class="n">point</span><span class="p">()</span>
-        <span class="n">dealer_sequence</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dealer</span><span class="o">.</span><span class="n">sequence</span><span class="p">(</span><span class="n">hidden</span><span class="o">=</span><span class="n">hidden</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dealer(</span><span class="si">{</span><span class="n">dealer_point</span><span class="si">:</span><span class="s2">2</span><span class="si">}</span><span class="s2">): </span><span class="si">{</span><span class="n">dealer_sequence</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span style="color: #D42">        :param hidden: ディーラーの2枚目を隠すかどうか</span>
+<span style="color: #D42">        &quot;&quot;&quot;</span>
+        player_point <span style="color: #333">=</span> <span style="color: #007020">self</span><span style="color: #333">.</span>player<span style="color: #333">.</span>point()
+        player_sequence <span style="color: #333">=</span> <span style="color: #007020">self</span><span style="color: #333">.</span>player<span style="color: #333">.</span>sequence()
+        <span style="color: #007020">print</span>(<span style="background-color: #FFF0F0">f&quot;Player(</span><span style="background-color: #EEE">{</span>player_point<span style="background-color: #EEE">:</span><span style="background-color: #FFF0F0">2</span><span style="background-color: #EEE">}</span><span style="background-color: #FFF0F0">): </span><span style="background-color: #EEE">{</span>player_sequence<span style="background-color: #EEE">}</span><span style="background-color: #FFF0F0">&quot;</span>)
+        dealer_point <span style="color: #333">=</span> <span style="background-color: #FFF0F0">&quot;--&quot;</span> <span style="color: #080; font-weight: bold">if</span> hidden <span style="color: #080; font-weight: bold">else</span> <span style="color: #007020">self</span><span style="color: #333">.</span>dealer<span style="color: #333">.</span>point()
+        dealer_sequence <span style="color: #333">=</span> <span style="color: #007020">self</span><span style="color: #333">.</span>dealer<span style="color: #333">.</span>sequence(hidden<span style="color: #333">=</span>hidden)
+        <span style="color: #007020">print</span>(<span style="background-color: #FFF0F0">f&quot;Dealer(</span><span style="background-color: #EEE">{</span>dealer_point<span style="background-color: #EEE">:</span><span style="background-color: #FFF0F0">2</span><span style="background-color: #EEE">}</span><span style="background-color: #FFF0F0">): </span><span style="background-color: #EEE">{</span>dealer_sequence<span style="background-color: #EEE">}</span><span style="background-color: #FFF0F0">&quot;</span>)
 
-    <span class="k">def</span><span class="w"> </span><span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Card</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;カードを配る&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">cards</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">pop</span>(<span style="color: #007020">self</span>) <span style="color: #333">-&gt;</span> Card:
+<span style="color: #BBB">        </span><span style="color: #D42">&quot;&quot;&quot;カードを配る&quot;&quot;&quot;</span>
+        <span style="color: #080; font-weight: bold">return</span> <span style="color: #007020">self</span><span style="color: #333">.</span>cards<span style="color: #333">.</span>pop(<span style="color: #00D; font-weight: bold">0</span>)
 </code></pre></div></td></tr></table></div>
               </details>
 
@@ -1119,7 +1119,7 @@
 
 
 <h3 id="src.blackjackpy.GameMaster.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">cards</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+            <code class=" language-python"><span style="color: #06B; font-weight: bold">__init__</span>(seed<span style="color: #333">=</span><span style="color: #080; font-weight: bold">None</span>, <span style="color: #333">*</span>, cards<span style="color: #333">=</span><span style="color: #080; font-weight: bold">None</span>)</code>
 
 </h3>
 
@@ -1177,35 +1177,35 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 92</span>
-<span class="normal"> 93</span>
-<span class="normal"> 94</span>
-<span class="normal"> 95</span>
-<span class="normal"> 96</span>
-<span class="normal"> 97</span>
-<span class="normal"> 98</span>
-<span class="normal"> 99</span>
-<span class="normal">100</span>
-<span class="normal">101</span>
-<span class="normal">102</span>
-<span class="normal">103</span>
-<span class="normal">104</span>
-<span class="normal">105</span>
-<span class="normal">106</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seed</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">cards</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;ゲームマスターの初期化</span>
+              <div class="codehilite" style="background: #ffffff"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 92</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 93</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 94</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 95</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 96</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 97</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 98</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 99</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">100</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">101</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">102</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">103</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">104</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">105</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">106</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">__init__</span>(<span style="color: #007020">self</span>, seed: <span style="color: #007020">int</span> <span style="color: #333">|</span> <span style="color: #080; font-weight: bold">None</span> <span style="color: #333">=</span> <span style="color: #080; font-weight: bold">None</span>, <span style="color: #333">*</span>, cards: <span style="color: #007020">list</span>[<span style="color: #007020">int</span>] <span style="color: #333">|</span> <span style="color: #080; font-weight: bold">None</span> <span style="color: #333">=</span> <span style="color: #080; font-weight: bold">None</span>):
+<span style="color: #BBB">    </span><span style="color: #D42">&quot;&quot;&quot;ゲームマスターの初期化</span>
 
-<span class="sd">    :param seed: 乱数シード, defaults to None</span>
-<span class="sd">    :param cards: 配布カードのリスト, defaults to None</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">cards</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">cards</span> <span class="o">=</span> <span class="p">[</span><span class="n">Card</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cards</span><span class="p">]</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">cards</span> <span class="o">=</span> <span class="p">[</span><span class="n">Card</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">52</span><span class="p">)]</span>
-        <span class="k">if</span> <span class="n">seed</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
-        <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cards</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">player</span> <span class="o">=</span> <span class="n">Player</span><span class="p">()</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">dealer</span> <span class="o">=</span> <span class="n">Dealer</span><span class="p">()</span>
+<span style="color: #D42">    :param seed: 乱数シード, defaults to None</span>
+<span style="color: #D42">    :param cards: 配布カードのリスト, defaults to None</span>
+<span style="color: #D42">    &quot;&quot;&quot;</span>
+    <span style="color: #080; font-weight: bold">if</span> cards:
+        <span style="color: #007020">self</span><span style="color: #333">.</span>cards <span style="color: #333">=</span> [Card(i) <span style="color: #080; font-weight: bold">for</span> i <span style="color: #000; font-weight: bold">in</span> cards]
+    <span style="color: #080; font-weight: bold">else</span>:
+        <span style="color: #007020">self</span><span style="color: #333">.</span>cards <span style="color: #333">=</span> [Card(i) <span style="color: #080; font-weight: bold">for</span> i <span style="color: #000; font-weight: bold">in</span> <span style="color: #007020">range</span>(<span style="color: #00D; font-weight: bold">52</span>)]
+        <span style="color: #080; font-weight: bold">if</span> seed <span style="color: #000; font-weight: bold">is</span> <span style="color: #000; font-weight: bold">not</span> <span style="color: #080; font-weight: bold">None</span>:
+            random<span style="color: #333">.</span>seed(seed)
+        random<span style="color: #333">.</span>shuffle(<span style="color: #007020">self</span><span style="color: #333">.</span>cards)
+    <span style="color: #007020">self</span><span style="color: #333">.</span>player <span style="color: #333">=</span> Player()
+    <span style="color: #007020">self</span><span style="color: #333">.</span>dealer <span style="color: #333">=</span> Dealer()
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -1216,7 +1216,7 @@
 
 
 <h3 id="src.blackjackpy.GameMaster.pop" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">pop</span><span class="p">()</span></code>
+            <code class=" language-python">pop()</code>
 
 </h3>
 
@@ -1227,11 +1227,11 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">138</span>
-<span class="normal">139</span>
-<span class="normal">140</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Card</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;カードを配る&quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">cards</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+              <div class="codehilite" style="background: #ffffff"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">138</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">139</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">140</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">pop</span>(<span style="color: #007020">self</span>) <span style="color: #333">-&gt;</span> Card:
+<span style="color: #BBB">    </span><span style="color: #D42">&quot;&quot;&quot;カードを配る&quot;&quot;&quot;</span>
+    <span style="color: #080; font-weight: bold">return</span> <span style="color: #007020">self</span><span style="color: #333">.</span>cards<span style="color: #333">.</span>pop(<span style="color: #00D; font-weight: bold">0</span>)
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -1242,7 +1242,7 @@
 
 
 <h3 id="src.blackjackpy.GameMaster.show" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">show</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">hidden</span><span class="p">)</span></code>
+            <code class=" language-python">show(<span style="color: #333">*</span>, hidden)</code>
 
 </h3>
 
@@ -1284,27 +1284,27 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">126</span>
-<span class="normal">127</span>
-<span class="normal">128</span>
-<span class="normal">129</span>
-<span class="normal">130</span>
-<span class="normal">131</span>
-<span class="normal">132</span>
-<span class="normal">133</span>
-<span class="normal">134</span>
-<span class="normal">135</span>
-<span class="normal">136</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">show</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">hidden</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;プレイヤーとディーラーのカード表示</span>
+              <div class="codehilite" style="background: #ffffff"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">126</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">127</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">128</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">129</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">130</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">131</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">132</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">133</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">134</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">135</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">136</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">show</span>(<span style="color: #007020">self</span>, <span style="color: #333">*</span>, hidden: <span style="color: #007020">bool</span>) <span style="color: #333">-&gt;</span> <span style="color: #080; font-weight: bold">None</span>:
+<span style="color: #BBB">    </span><span style="color: #D42">&quot;&quot;&quot;プレイヤーとディーラーのカード表示</span>
 
-<span class="sd">    :param hidden: ディーラーの2枚目を隠すかどうか</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">player_point</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">point</span><span class="p">()</span>
-    <span class="n">player_sequence</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">sequence</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Player(</span><span class="si">{</span><span class="n">player_point</span><span class="si">:</span><span class="s2">2</span><span class="si">}</span><span class="s2">): </span><span class="si">{</span><span class="n">player_sequence</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="n">dealer_point</span> <span class="o">=</span> <span class="s2">&quot;--&quot;</span> <span class="k">if</span> <span class="n">hidden</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">dealer</span><span class="o">.</span><span class="n">point</span><span class="p">()</span>
-    <span class="n">dealer_sequence</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dealer</span><span class="o">.</span><span class="n">sequence</span><span class="p">(</span><span class="n">hidden</span><span class="o">=</span><span class="n">hidden</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dealer(</span><span class="si">{</span><span class="n">dealer_point</span><span class="si">:</span><span class="s2">2</span><span class="si">}</span><span class="s2">): </span><span class="si">{</span><span class="n">dealer_sequence</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span style="color: #D42">    :param hidden: ディーラーの2枚目を隠すかどうか</span>
+<span style="color: #D42">    &quot;&quot;&quot;</span>
+    player_point <span style="color: #333">=</span> <span style="color: #007020">self</span><span style="color: #333">.</span>player<span style="color: #333">.</span>point()
+    player_sequence <span style="color: #333">=</span> <span style="color: #007020">self</span><span style="color: #333">.</span>player<span style="color: #333">.</span>sequence()
+    <span style="color: #007020">print</span>(<span style="background-color: #FFF0F0">f&quot;Player(</span><span style="background-color: #EEE">{</span>player_point<span style="background-color: #EEE">:</span><span style="background-color: #FFF0F0">2</span><span style="background-color: #EEE">}</span><span style="background-color: #FFF0F0">): </span><span style="background-color: #EEE">{</span>player_sequence<span style="background-color: #EEE">}</span><span style="background-color: #FFF0F0">&quot;</span>)
+    dealer_point <span style="color: #333">=</span> <span style="background-color: #FFF0F0">&quot;--&quot;</span> <span style="color: #080; font-weight: bold">if</span> hidden <span style="color: #080; font-weight: bold">else</span> <span style="color: #007020">self</span><span style="color: #333">.</span>dealer<span style="color: #333">.</span>point()
+    dealer_sequence <span style="color: #333">=</span> <span style="color: #007020">self</span><span style="color: #333">.</span>dealer<span style="color: #333">.</span>sequence(hidden<span style="color: #333">=</span>hidden)
+    <span style="color: #007020">print</span>(<span style="background-color: #FFF0F0">f&quot;Dealer(</span><span style="background-color: #EEE">{</span>dealer_point<span style="background-color: #EEE">:</span><span style="background-color: #FFF0F0">2</span><span style="background-color: #EEE">}</span><span style="background-color: #FFF0F0">): </span><span style="background-color: #EEE">{</span>dealer_sequence<span style="background-color: #EEE">}</span><span style="background-color: #FFF0F0">&quot;</span>)
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -1315,7 +1315,7 @@
 
 
 <h3 id="src.blackjackpy.GameMaster.start_game" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">start_game</span><span class="p">()</span></code>
+            <code class=" language-python">start_game()</code>
 
 </h3>
 
@@ -1326,39 +1326,39 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">108</span>
-<span class="normal">109</span>
-<span class="normal">110</span>
-<span class="normal">111</span>
-<span class="normal">112</span>
-<span class="normal">113</span>
-<span class="normal">114</span>
-<span class="normal">115</span>
-<span class="normal">116</span>
-<span class="normal">117</span>
-<span class="normal">118</span>
-<span class="normal">119</span>
-<span class="normal">120</span>
-<span class="normal">121</span>
-<span class="normal">122</span>
-<span class="normal">123</span>
-<span class="normal">124</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">start_game</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;ゲームの開始&quot;&quot;&quot;</span>
-    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">dealer</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">act</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-    <span class="n">player_point</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">player</span><span class="o">.</span><span class="n">point</span><span class="p">()</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;You lose.&quot;</span>
-    <span class="k">if</span> <span class="n">player_point</span> <span class="o">&lt;=</span> <span class="n">POINT21</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">dealer</span><span class="o">.</span><span class="n">act</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-        <span class="n">dealer_point</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dealer</span><span class="o">.</span><span class="n">point</span><span class="p">()</span>
-        <span class="k">if</span> <span class="n">player_point</span> <span class="o">==</span> <span class="n">dealer_point</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Draw.&quot;</span>
-        <span class="k">elif</span> <span class="n">dealer_point</span> <span class="o">&gt;</span> <span class="n">POINT21</span> <span class="ow">or</span> <span class="n">dealer_point</span> <span class="o">&lt;</span> <span class="n">player_point</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;You win.&quot;</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">hidden</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">message</span><span class="p">)</span>
+              <div class="codehilite" style="background: #ffffff"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">108</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">109</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">110</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">111</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">112</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">113</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">114</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">115</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">116</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">117</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">118</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">119</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">120</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">121</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">122</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">123</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">124</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">start_game</span>(<span style="color: #007020">self</span>) <span style="color: #333">-&gt;</span> <span style="color: #080; font-weight: bold">None</span>:
+<span style="color: #BBB">    </span><span style="color: #D42">&quot;&quot;&quot;ゲームの開始&quot;&quot;&quot;</span>
+    <span style="color: #080; font-weight: bold">for</span> _ <span style="color: #000; font-weight: bold">in</span> <span style="color: #007020">range</span>(<span style="color: #00D; font-weight: bold">2</span>):
+        <span style="color: #007020">self</span><span style="color: #333">.</span>player<span style="color: #333">.</span>draw(<span style="color: #007020">self</span>)
+        <span style="color: #007020">self</span><span style="color: #333">.</span>dealer<span style="color: #333">.</span>draw(<span style="color: #007020">self</span>)
+    <span style="color: #007020">self</span><span style="color: #333">.</span>player<span style="color: #333">.</span>act(<span style="color: #007020">self</span>)
+    player_point <span style="color: #333">=</span> <span style="color: #007020">self</span><span style="color: #333">.</span>player<span style="color: #333">.</span>point()
+    <span style="color: #007020">self</span><span style="color: #333">.</span>message <span style="color: #333">=</span> <span style="background-color: #FFF0F0">&quot;You lose.&quot;</span>
+    <span style="color: #080; font-weight: bold">if</span> player_point <span style="color: #333">&lt;=</span> POINT21:
+        <span style="color: #007020">self</span><span style="color: #333">.</span>dealer<span style="color: #333">.</span>act(<span style="color: #007020">self</span>)
+        dealer_point <span style="color: #333">=</span> <span style="color: #007020">self</span><span style="color: #333">.</span>dealer<span style="color: #333">.</span>point()
+        <span style="color: #080; font-weight: bold">if</span> player_point <span style="color: #333">==</span> dealer_point:
+            <span style="color: #007020">self</span><span style="color: #333">.</span>message <span style="color: #333">=</span> <span style="background-color: #FFF0F0">&quot;Draw.&quot;</span>
+        <span style="color: #080; font-weight: bold">elif</span> dealer_point <span style="color: #333">&gt;</span> POINT21 <span style="color: #000; font-weight: bold">or</span> dealer_point <span style="color: #333">&lt;</span> player_point:
+            <span style="color: #007020">self</span><span style="color: #333">.</span>message <span style="color: #333">=</span> <span style="background-color: #FFF0F0">&quot;You win.&quot;</span>
+    <span style="color: #007020">self</span><span style="color: #333">.</span>show(hidden<span style="color: #333">=</span><span style="color: #080; font-weight: bold">False</span>)
+    <span style="color: #007020">print</span>(<span style="color: #007020">self</span><span style="color: #333">.</span>message)
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -1398,43 +1398,43 @@
 
               <details class="quote">
                 <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">57</span>
-<span class="normal">58</span>
-<span class="normal">59</span>
-<span class="normal">60</span>
-<span class="normal">61</span>
-<span class="normal">62</span>
-<span class="normal">63</span>
-<span class="normal">64</span>
-<span class="normal">65</span>
-<span class="normal">66</span>
-<span class="normal">67</span>
-<span class="normal">68</span>
-<span class="normal">69</span>
-<span class="normal">70</span>
-<span class="normal">71</span>
-<span class="normal">72</span>
-<span class="normal">73</span>
-<span class="normal">74</span>
-<span class="normal">75</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Player</span><span class="p">(</span><span class="n">Owner</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;**クラス** | プレイヤー&quot;&quot;&quot;</span>
+                <div class="codehilite" style="background: #ffffff"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">57</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">58</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">59</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">60</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">61</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">62</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">63</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">64</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">65</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">66</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">67</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">68</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">69</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">70</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">71</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">72</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">73</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">74</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">75</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #080; font-weight: bold">class</span><span style="color: #BBB"> </span><span style="color: #B06; font-weight: bold">Player</span>(Owner):
+<span style="color: #BBB">    </span><span style="color: #D42">&quot;&quot;&quot;**クラス** | プレイヤー&quot;&quot;&quot;</span>
 
-    <span class="nd">@classmethod</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">ask</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;標準入力から選択を取得し戻り値とする&quot;&quot;&quot;</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hit? (y/n) &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-        <span class="k">return</span> <span class="nb">input</span><span class="p">()</span>
+    <span style="color: #555; font-weight: bold">@classmethod</span>
+    <span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">ask</span>(<span style="color: #007020">cls</span>) <span style="color: #333">-&gt;</span> <span style="color: #007020">str</span>:
+<span style="color: #BBB">        </span><span style="color: #D42">&quot;&quot;&quot;標準入力から選択を取得し戻り値とする&quot;&quot;&quot;</span>
+        <span style="color: #007020">print</span>(<span style="background-color: #FFF0F0">&quot;Hit? (y/n) &quot;</span>, end<span style="color: #333">=</span><span style="background-color: #FFF0F0">&quot;&quot;</span>)
+        <span style="color: #080; font-weight: bold">return</span> <span style="color: #007020">input</span>()
 
-    <span class="k">def</span><span class="w"> </span><span class="nf">act</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gm</span><span class="p">:</span> <span class="s2">&quot;GameMaster&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;プレイヤーの手番の処理&quot;&quot;&quot;</span>
-        <span class="k">while</span> <span class="bp">self</span><span class="o">.</span><span class="n">point</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">POINT21</span><span class="p">:</span>
-            <span class="n">gm</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">hidden</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-            <span class="n">answer</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-            <span class="k">while</span> <span class="n">answer</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;n&quot;</span><span class="p">}:</span>
-                <span class="n">answer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ask</span><span class="p">()</span>
-            <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="s2">&quot;n&quot;</span><span class="p">:</span>
-                <span class="k">break</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">gm</span><span class="p">)</span>
+    <span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">act</span>(<span style="color: #007020">self</span>, gm: <span style="background-color: #FFF0F0">&quot;GameMaster&quot;</span>) <span style="color: #333">-&gt;</span> <span style="color: #080; font-weight: bold">None</span>:
+<span style="color: #BBB">        </span><span style="color: #D42">&quot;&quot;&quot;プレイヤーの手番の処理&quot;&quot;&quot;</span>
+        <span style="color: #080; font-weight: bold">while</span> <span style="color: #007020">self</span><span style="color: #333">.</span>point() <span style="color: #333">&lt;</span> POINT21:
+            gm<span style="color: #333">.</span>show(hidden<span style="color: #333">=</span><span style="color: #080; font-weight: bold">True</span>)
+            answer <span style="color: #333">=</span> <span style="background-color: #FFF0F0">&quot;&quot;</span>
+            <span style="color: #080; font-weight: bold">while</span> answer <span style="color: #000; font-weight: bold">not</span> <span style="color: #000; font-weight: bold">in</span> {<span style="background-color: #FFF0F0">&quot;y&quot;</span>, <span style="background-color: #FFF0F0">&quot;n&quot;</span>}:
+                answer <span style="color: #333">=</span> <span style="color: #007020">self</span><span style="color: #333">.</span>ask()
+            <span style="color: #080; font-weight: bold">if</span> answer <span style="color: #333">==</span> <span style="background-color: #FFF0F0">&quot;n&quot;</span>:
+                <span style="color: #080; font-weight: bold">break</span>
+            <span style="color: #007020">self</span><span style="color: #333">.</span>draw(gm)
 </code></pre></div></td></tr></table></div>
               </details>
 
@@ -1454,7 +1454,7 @@
 
 
 <h3 id="src.blackjackpy.Player.act" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">act</span><span class="p">(</span><span class="n">gm</span><span class="p">)</span></code>
+            <code class=" language-python">act(gm)</code>
 
 </h3>
 
@@ -1465,25 +1465,25 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">66</span>
-<span class="normal">67</span>
-<span class="normal">68</span>
-<span class="normal">69</span>
-<span class="normal">70</span>
-<span class="normal">71</span>
-<span class="normal">72</span>
-<span class="normal">73</span>
-<span class="normal">74</span>
-<span class="normal">75</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">act</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gm</span><span class="p">:</span> <span class="s2">&quot;GameMaster&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;プレイヤーの手番の処理&quot;&quot;&quot;</span>
-    <span class="k">while</span> <span class="bp">self</span><span class="o">.</span><span class="n">point</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">POINT21</span><span class="p">:</span>
-        <span class="n">gm</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">hidden</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-        <span class="n">answer</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-        <span class="k">while</span> <span class="n">answer</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;n&quot;</span><span class="p">}:</span>
-            <span class="n">answer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ask</span><span class="p">()</span>
-        <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="s2">&quot;n&quot;</span><span class="p">:</span>
-            <span class="k">break</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">gm</span><span class="p">)</span>
+              <div class="codehilite" style="background: #ffffff"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">66</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">67</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">68</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">69</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">70</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">71</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">72</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">73</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">74</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">75</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">act</span>(<span style="color: #007020">self</span>, gm: <span style="background-color: #FFF0F0">&quot;GameMaster&quot;</span>) <span style="color: #333">-&gt;</span> <span style="color: #080; font-weight: bold">None</span>:
+<span style="color: #BBB">    </span><span style="color: #D42">&quot;&quot;&quot;プレイヤーの手番の処理&quot;&quot;&quot;</span>
+    <span style="color: #080; font-weight: bold">while</span> <span style="color: #007020">self</span><span style="color: #333">.</span>point() <span style="color: #333">&lt;</span> POINT21:
+        gm<span style="color: #333">.</span>show(hidden<span style="color: #333">=</span><span style="color: #080; font-weight: bold">True</span>)
+        answer <span style="color: #333">=</span> <span style="background-color: #FFF0F0">&quot;&quot;</span>
+        <span style="color: #080; font-weight: bold">while</span> answer <span style="color: #000; font-weight: bold">not</span> <span style="color: #000; font-weight: bold">in</span> {<span style="background-color: #FFF0F0">&quot;y&quot;</span>, <span style="background-color: #FFF0F0">&quot;n&quot;</span>}:
+            answer <span style="color: #333">=</span> <span style="color: #007020">self</span><span style="color: #333">.</span>ask()
+        <span style="color: #080; font-weight: bold">if</span> answer <span style="color: #333">==</span> <span style="background-color: #FFF0F0">&quot;n&quot;</span>:
+            <span style="color: #080; font-weight: bold">break</span>
+        <span style="color: #007020">self</span><span style="color: #333">.</span>draw(gm)
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -1494,7 +1494,7 @@
 
 
 <h3 id="src.blackjackpy.Player.ask" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">ask</span><span class="p">()</span></code>
+            <code class=" language-python">ask()</code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
@@ -1509,15 +1509,15 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">60</span>
-<span class="normal">61</span>
-<span class="normal">62</span>
-<span class="normal">63</span>
-<span class="normal">64</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">ask</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;標準入力から選択を取得し戻り値とする&quot;&quot;&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hit? (y/n) &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="nb">input</span><span class="p">()</span>
+              <div class="codehilite" style="background: #ffffff"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">60</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">61</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">62</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">63</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">64</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #555; font-weight: bold">@classmethod</span>
+<span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">ask</span>(<span style="color: #007020">cls</span>) <span style="color: #333">-&gt;</span> <span style="color: #007020">str</span>:
+<span style="color: #BBB">    </span><span style="color: #D42">&quot;&quot;&quot;標準入力から選択を取得し戻り値とする&quot;&quot;&quot;</span>
+    <span style="color: #007020">print</span>(<span style="background-color: #FFF0F0">&quot;Hit? (y/n) &quot;</span>, end<span style="color: #333">=</span><span style="background-color: #FFF0F0">&quot;&quot;</span>)
+    <span style="color: #080; font-weight: bold">return</span> <span style="color: #007020">input</span>()
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -1537,7 +1537,7 @@
 
 
 <h2 id="src.blackjackpy.main" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">main</span><span class="p">()</span></code>
+            <code class=" language-python">main()</code>
 
 </h2>
 
@@ -1548,11 +1548,11 @@
 
             <details class="quote">
               <summary>Source code in <code>src/blackjackpy/blackjack.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">143</span>
-<span class="normal">144</span>
-<span class="normal">145</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;ゲーム実行&quot;&quot;&quot;</span>
-    <span class="n">GameMaster</span><span class="p">()</span><span class="o">.</span><span class="n">start_game</span><span class="p">()</span>
+              <div class="codehilite" style="background: #ffffff"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">143</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">144</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">145</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><span style="color: #080; font-weight: bold">def</span><span style="color: #BBB"> </span><span style="color: #06B; font-weight: bold">main</span>():
+<span style="color: #BBB">    </span><span style="color: #D42">&quot;&quot;&quot;ゲーム実行&quot;&quot;&quot;</span>
+    GameMaster()<span style="color: #333">.</span>start_game()
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -1612,7 +1612,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
     
     
       <script src="../assets/javascripts/bundle.60a45f97.min.js"></script>

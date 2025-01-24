@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="ja" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -63,7 +63,7 @@
       
         
         <a href="#about-blackjack" class="md-skip">
-          Skip to content
+          コンテンツにスキップ
         </a>
       
     </div>
@@ -77,7 +77,7 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
     <a href="." title="BlackJack" class="md-header__button md-logo" aria-label="BlackJack" data-md-component="logo">
       
   
@@ -118,16 +118,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="検索">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -138,7 +138,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            検索を初期化
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -171,7 +171,7 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="BlackJack" class="md-nav__button md-logo" aria-label="BlackJack" data-md-component="logo">
       
@@ -223,7 +223,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
   
@@ -232,7 +232,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目次
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -322,7 +322,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
   
@@ -331,7 +331,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目次
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -420,28 +420,30 @@
 <li>If the hands are the same, then tie.</li>
 </ul>
 <h2 id="install">Install</h2>
-<pre><code class="language-sh">pip install blackjackpy
-</code></pre>
+<div class="codehilite" style="background: #ffffff"><pre style="line-height: 125%;"><span></span><code>pip<span style="color: #BBB"> </span>install<span style="color: #BBB"> </span>blackjackpy
+</code></pre></div>
+
 <h2 id="how-to-play">How to play</h2>
-<pre><code class="language-sh">$ blackjackpy
-Player( 6):  2(C) 4(S)
-Dealer(--):  5(C) *(*)
-Hit? (y/n) y
-Player(16):  2(C) 4(S) J(C)
-Dealer(--):  5(C) *(*)
-Hit? (y/n) n
-Player(16):  2(C) 4(S) J(C)
-Dealer(17):  5(C) 3(C) 9(S)
-You lose.
-</code></pre>
-<pre><code class="language-sh">$ blackjackpy
-Player(20): 10(S) K(C)
-Dealer(--):  7(C) *(*)
-Hit? (y/n) n
-Player(20): 10(S) K(C)
-Dealer(18):  7(C) A(H)
-You win.
-</code></pre>
+<div class="codehilite" style="background: #ffffff"><pre style="line-height: 125%;"><span></span><code>$<span style="color: #BBB"> </span>blackjackpy
+Player<span style="color: #333">(</span><span style="color: #BBB"> </span><span style="color: #60E; font-weight: bold">6</span><span style="color: #333">)</span>:<span style="color: #BBB">  </span><span style="color: #60E; font-weight: bold">2</span><span style="color: #333">(</span>C<span style="color: #333">)</span><span style="color: #BBB"> </span><span style="color: #60E; font-weight: bold">4</span><span style="color: #333">(</span>S<span style="color: #333">)</span>
+Dealer<span style="color: #333">(</span>--<span style="color: #333">)</span>:<span style="color: #BBB">  </span><span style="color: #60E; font-weight: bold">5</span><span style="color: #333">(</span>C<span style="color: #333">)</span><span style="color: #BBB"> </span>*<span style="color: #333">(</span>*<span style="color: #333">)</span>
+Hit?<span style="color: #BBB"> </span><span style="color: #333">(</span>y/n<span style="color: #333">)</span><span style="color: #BBB"> </span>y
+Player<span style="color: #333">(</span><span style="color: #60E; font-weight: bold">16</span><span style="color: #333">)</span>:<span style="color: #BBB">  </span><span style="color: #60E; font-weight: bold">2</span><span style="color: #333">(</span>C<span style="color: #333">)</span><span style="color: #BBB"> </span><span style="color: #60E; font-weight: bold">4</span><span style="color: #333">(</span>S<span style="color: #333">)</span><span style="color: #BBB"> </span>J<span style="color: #333">(</span>C<span style="color: #333">)</span>
+Dealer<span style="color: #333">(</span>--<span style="color: #333">)</span>:<span style="color: #BBB">  </span><span style="color: #60E; font-weight: bold">5</span><span style="color: #333">(</span>C<span style="color: #333">)</span><span style="color: #BBB"> </span>*<span style="color: #333">(</span>*<span style="color: #333">)</span>
+Hit?<span style="color: #BBB"> </span><span style="color: #333">(</span>y/n<span style="color: #333">)</span><span style="color: #BBB"> </span>n
+Player<span style="color: #333">(</span><span style="color: #60E; font-weight: bold">16</span><span style="color: #333">)</span>:<span style="color: #BBB">  </span><span style="color: #60E; font-weight: bold">2</span><span style="color: #333">(</span>C<span style="color: #333">)</span><span style="color: #BBB"> </span><span style="color: #60E; font-weight: bold">4</span><span style="color: #333">(</span>S<span style="color: #333">)</span><span style="color: #BBB"> </span>J<span style="color: #333">(</span>C<span style="color: #333">)</span>
+Dealer<span style="color: #333">(</span><span style="color: #60E; font-weight: bold">17</span><span style="color: #333">)</span>:<span style="color: #BBB">  </span><span style="color: #60E; font-weight: bold">5</span><span style="color: #333">(</span>C<span style="color: #333">)</span><span style="color: #BBB"> </span><span style="color: #60E; font-weight: bold">3</span><span style="color: #333">(</span>C<span style="color: #333">)</span><span style="color: #BBB"> </span><span style="color: #60E; font-weight: bold">9</span><span style="color: #333">(</span>S<span style="color: #333">)</span>
+You<span style="color: #BBB"> </span>lose.
+</code></pre></div>
+
+<div class="codehilite" style="background: #ffffff"><pre style="line-height: 125%;"><span></span><code>$<span style="color: #BBB"> </span>blackjackpy
+Player<span style="color: #333">(</span><span style="color: #60E; font-weight: bold">20</span><span style="color: #333">)</span>:<span style="color: #BBB"> </span><span style="color: #60E; font-weight: bold">10</span><span style="color: #333">(</span>S<span style="color: #333">)</span><span style="color: #BBB"> </span>K<span style="color: #333">(</span>C<span style="color: #333">)</span>
+Dealer<span style="color: #333">(</span>--<span style="color: #333">)</span>:<span style="color: #BBB">  </span><span style="color: #60E; font-weight: bold">7</span><span style="color: #333">(</span>C<span style="color: #333">)</span><span style="color: #BBB"> </span>*<span style="color: #333">(</span>*<span style="color: #333">)</span>
+Hit?<span style="color: #BBB"> </span><span style="color: #333">(</span>y/n<span style="color: #333">)</span><span style="color: #BBB"> </span>n
+Player<span style="color: #333">(</span><span style="color: #60E; font-weight: bold">20</span><span style="color: #333">)</span>:<span style="color: #BBB"> </span><span style="color: #60E; font-weight: bold">10</span><span style="color: #333">(</span>S<span style="color: #333">)</span><span style="color: #BBB"> </span>K<span style="color: #333">(</span>C<span style="color: #333">)</span>
+Dealer<span style="color: #333">(</span><span style="color: #60E; font-weight: bold">18</span><span style="color: #333">)</span>:<span style="color: #BBB">  </span><span style="color: #60E; font-weight: bold">7</span><span style="color: #333">(</span>C<span style="color: #333">)</span><span style="color: #BBB"> </span>A<span style="color: #333">(</span>H<span style="color: #333">)</span>
+You<span style="color: #BBB"> </span>win.
+</code></pre></div>
 
 
 
@@ -488,7 +490,7 @@ You win.
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
     
     
       <script src="assets/javascripts/bundle.60a45f97.min.js"></script>
