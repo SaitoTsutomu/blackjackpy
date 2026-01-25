@@ -1,6 +1,7 @@
 """ブラックジャックのゲーム"""
 
-import random
+# ruff: noqa: T201
+import secrets
 import typing
 
 POINT21: typing.Final[int] = 21
@@ -9,7 +10,7 @@ POINT21: typing.Final[int] = 21
 class Card:
     """**クラス** | カード"""
 
-    def __init__(self, num: int):
+    def __init__(self, num: int) -> None:
         """カードの初期化
 
         :param num: 0-52の数字
@@ -21,7 +22,7 @@ class Card:
         """カードの得点"""
         return min(10, self.rank)
 
-    def __str__(self):
+    def __str__(self) -> str:
         """文字列化"""
         n = self.rank * 2
         m = n - 2
@@ -33,10 +34,10 @@ class Card:
 class Owner:
     """**クラス** | 手札を持ち、カードを引ける人"""
 
-    def __init__(self):  # noqa: D107
+    def __init__(self) -> None:
         self.hands = []
 
-    def draw(self, gm: "GameMaster") -> None:
+    def draw(self, gm: GameMaster) -> None:
         """カードを引く"""
         self.hands.append(gm.pop())
 
@@ -63,7 +64,7 @@ class Player(Owner):
         print("Hit? (y/n) ", end="")
         return input()
 
-    def act(self, gm: "GameMaster") -> None:
+    def act(self, gm: GameMaster) -> None:
         """プレイヤーの手番の処理"""
         while self.point() < POINT21:
             gm.show(hidden=True)
@@ -80,7 +81,7 @@ class Dealer(Owner):
 
     LOWER: typing.Final[int] = 17
 
-    def act(self, gm: "GameMaster") -> None:
+    def act(self, gm: GameMaster) -> None:
         """ディーラーの手番の処理"""
         while self.point() < self.LOWER:
             self.draw(gm)
@@ -89,19 +90,16 @@ class Dealer(Owner):
 class GameMaster:
     """**クラス** | ゲームマスター"""
 
-    def __init__(self, seed: int | None = None, *, cards: list[int] | None = None):
+    def __init__(self, *, cards: list[int] | None = None) -> None:
         """ゲームマスターの初期化
 
-        :param seed: 乱数シード, defaults to None
         :param cards: 配布カードのリスト, defaults to None
         """
         if cards:
             self.cards = [Card(i) for i in cards]
         else:
             self.cards = [Card(i) for i in range(52)]
-            if seed is not None:
-                random.seed(seed)
-            random.shuffle(self.cards)
+            secrets.SystemRandom().shuffle(self.cards)
         self.player = Player()
         self.dealer = Dealer()
 
@@ -140,6 +138,6 @@ class GameMaster:
         return self.cards.pop(0)
 
 
-def main():
+def main() -> None:
     """ゲーム実行"""
     GameMaster().start_game()

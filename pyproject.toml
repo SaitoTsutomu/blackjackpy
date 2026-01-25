@@ -13,7 +13,7 @@ license = {text = "Apache-2.0"}
 name = "blackjackpy"
 readme = "README.md"
 requires-python = ">=3.12"
-version = "0.2.6"
+version = "0.3.0"
 
 [project.urls]
 docs = "https://saitotsutomu.github.io/blackjackpy/"
@@ -22,27 +22,44 @@ homepage = "https://github.com/SaitoTsutomu/blackjackpy"
 [project.scripts]
 blackjackpy = "blackjackpy:main"
 
-[tool.uv]
-dev-dependencies = [
-  "more-itertools>=10.6.0",
-  "pytest>=8.3.4",
+[dependency-groups]
+dev = [
+  "more-itertools>=10.8.0",
+  "pytest>=9.0.2",
 ]
 
-[tool.mypy]
-files = "src"
-ignore_missing_imports = true
+[tool.taskipy.tasks]
+lint = "pyrefly check src && ruff check src"
+test = "uv run pytest --disable-warnings"
+
+[tool.pytest.ini_options]
+norecursedirs = ["nbs"]
+pythonpath = ["src"]
 
 [tool.ruff]
 src = ["src"]
 
 [tool.ruff.lint]
-ignore = ["ANN001", "ANN20", "CPY", "DOC201", "D203", "D213", "D400", "D415", "E501", "T201"]
+ignore = [
+  "ANN401",
+  "CPY",
+  "D10",
+  "D203",
+  "D213",
+  "D400",
+  "D415",
+  "DOC",
+  "E501",
+]
 preview = true
 select = ["ALL"]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"*/tests/*.py" = ["S101"]
 
 [tool.ruff.lint.mccabe]
 max-complexity = 10
 
 [build-system]
-build-backend = "hatchling.build"
-requires = ["hatchling"]
+build-backend = "uv_build"
+requires = ["uv_build>=0.9.5,<0.10.0"]

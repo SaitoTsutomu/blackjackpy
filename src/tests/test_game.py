@@ -1,12 +1,14 @@
-# flake8: noqa: S101 D100
 import unittest.mock
-from collections.abc import Callable
 from textwrap import dedent
+from typing import TYPE_CHECKING
 
 import pytest
 from more_itertools import repeat_last
 
 from blackjackpy import GameMaster, Player
+
+if TYPE_CHECKING:
+    from collections.abc import Callable
 
 
 def ask(player_answers: str) -> Callable[[Player], str]:
@@ -67,7 +69,7 @@ expected5 = """\
         ([10, 11, 12, 5, 0, 4], "yn", dedent(expected5)),
     ],
 )
-def test_game(capsys, cards: list[int], player_answers: str, expected: str):
+def test_game(capsys: pytest.CaptureFixture, cards: list[int], player_answers: str, expected: str) -> None:
     """ゲームのテスト
 
     :param capsys: 標準入力用フィクスチャ
