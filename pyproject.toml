@@ -30,7 +30,15 @@ dev = [
 
 [tool.taskipy.tasks]
 lint = "pyrefly check src && ruff check src"
+pip-audit = "uv run -w pip-audit pip-audit"
 test = "uv run pytest --disable-warnings"
+
+[tool.uv]
+exclude-newer = "3 days"
+
+[[tool.uv.index]]
+default = true
+url = "https://pypi.flatt.tech/simple/"
 
 [tool.pytest.ini_options]
 norecursedirs = ["nbs"]
