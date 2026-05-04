@@ -71,4 +71,4 @@ max-complexity = 10
 
 [build-system]
 build-backend = "uv_build"
-requires = ["uv_build>=0.9.5,<0.10.0"]
+requires = ["uv_build>=0.11.6,<0.12.0"]
