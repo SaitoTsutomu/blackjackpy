@@ -35,7 +35,7 @@ class Owner:
     """**クラス** | 手札を持ち、カードを引ける人"""
 
     def __init__(self) -> None:
-        self.hands = []
+        self.hands: list[Card] = []
 
     def draw(self, gm: GameMaster) -> None:
         """カードを引く"""
@@ -95,13 +95,14 @@ class GameMaster:
 
         :param cards: 配布カードのリスト, defaults to None
         """
-        if cards:
-            self.cards = [Card(i) for i in cards]
-        else:
+        if cards is None:
             self.cards = [Card(i) for i in range(52)]
             secrets.SystemRandom().shuffle(self.cards)
+        else:
+            self.cards = [Card(i) for i in cards if 0 <= i < 52]  # noqa: PLR2004
         self.player = Player()
         self.dealer = Dealer()
+        self.message = ""
 
     def start_game(self) -> None:
         """ゲームの開始"""

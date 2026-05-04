@@ -2,18 +2,18 @@
 authors = [{name = "Saito Tsutomu", email = "tsutomu7@hotmail.co.jp"}]
 classifiers = [
   "Development Status :: 1 - Planning",
-  "License :: OSI Approved :: Apache Software License",
   "Programming Language :: Python",
   "Topic :: Software Development",
   "Topic :: Scientific/Engineering",
 ]
 dependencies = []
 description = "Blackjack game"
-license = {text = "Apache-2.0"}
+license = "Apache-2.0"
+license-files = ["LICENSE*"]
 name = "blackjackpy"
 readme = "README.md"
-requires-python = ">=3.12"
-version = "0.3.0"
+requires-python = ">=3.14"
+version = "0.4.0"
 
 [project.urls]
 docs = "https://saitotsutomu.github.io/blackjackpy/"
@@ -24,11 +24,12 @@ blackjackpy = "blackjackpy:main"
 
 [dependency-groups]
 dev = [
-  "more-itertools>=10.8.0",
-  "pytest>=9.0.2",
+  "more-itertools>=11.0.2",
+  "pytest>=9.0.3",
 ]
 
 [tool.taskipy.tasks]
+license = "uv run -w pip-licenses pip-licenses"
 lint = "pyrefly check src && ruff check src"
 pip-audit = "uv run -w pip-audit pip-audit"
 test = "uv run pytest --disable-warnings"
