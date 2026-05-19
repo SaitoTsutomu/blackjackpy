@@ -45,6 +45,9 @@ url = "https://pypi.flatt.tech/simple/"
 norecursedirs = ["nbs"]
 pythonpath = ["src"]
 
+[tool.pyrefly]
+project-includes = ["src"]
+
 [tool.ruff]
 src = ["src"]
 
