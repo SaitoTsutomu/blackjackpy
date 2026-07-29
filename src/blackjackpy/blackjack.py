@@ -1,6 +1,6 @@
 """ブラックジャックのゲーム"""
 
-# ruff: noqa: T201
+# ruff: file-ignore[print]
 import secrets
 import typing
 
@@ -99,7 +99,7 @@ class GameMaster:
             self.cards = [Card(i) for i in range(52)]
             secrets.SystemRandom().shuffle(self.cards)
         else:
-            self.cards = [Card(i) for i in cards if 0 <= i < 52]  # noqa: PLR2004
+            self.cards = [Card(i) for i in cards if 0 <= i < 52]  # ruff: ignore[magic-value-comparison]
         self.player = Player()
         self.dealer = Dealer()
         self.message = ""
