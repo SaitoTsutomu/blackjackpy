@@ -13,7 +13,7 @@ class Card:
     def __init__(self, num: int) -> None:
         """カードの初期化
 
-        :param num: 0-52の数字
+        :param num: 0-51の数字
         """
         self.suit = num // 13 + 1
         self.rank = num % 13 + 1
@@ -43,8 +43,10 @@ class Owner:
 
     def sequence(self, *, hidden: bool = False) -> str:
         """手札の文字列化"""
-        s = "".join(str(cd) for cd in self.hands)
-        return (s[:5] + " *(*)" + s[10:]) if hidden else s
+        cards = [str(cd) for cd in self.hands]
+        if hidden:
+            cards[1:2] = [" *(*)"]
+        return "".join(cards)
 
     def point(self) -> int:
         """手札の合計得点"""
@@ -62,7 +64,7 @@ class Player(Owner):
     def ask(cls) -> str:
         """標準入力から選択を取得し戻り値とする"""
         print("Hit? (y/n) ", end="")
-        return input()
+        return input().strip().lower()
 
     def act(self, gm: GameMaster) -> None:
         """プレイヤーの手番の処理"""
@@ -141,4 +143,7 @@ class GameMaster:
 
 def main() -> None:
     """ゲーム実行"""
-    GameMaster().start_game()
+    try:
+        GameMaster().start_game()
+    except (EOFError, KeyboardInterrupt):
+        print()

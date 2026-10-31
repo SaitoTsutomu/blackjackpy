@@ -1,10 +1,9 @@
 [project]
 authors = [{name = "Saito Tsutomu", email = "tsutomu7@hotmail.co.jp"}]
 classifiers = [
-  "Development Status :: 1 - Planning",
   "Programming Language :: Python",
   "Topic :: Software Development",
-  "Topic :: Scientific/Engineering",
+  "Topic :: Games/Entertainment",
 ]
 dependencies = []
 description = "Blackjack game"
@@ -13,7 +12,7 @@ license-files = ["LICENSE*"]
 name = "blackjackpy"
 readme = "README.md"
 requires-python = ">=3.14"
-version = "0.4.0"
+version = "0.4.1"
 
 [project.urls]
 docs = "https://saitotsutomu.github.io/blackjackpy/"
